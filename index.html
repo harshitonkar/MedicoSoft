@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MedicoSoft — Digital Twin Healthcare Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="logo-dot"></div>
+    MedicoSoft
+  </div>
+  <ul class="nav-links">
+    <li><a href="#problem">Problem</a></li>
+    <li><a href="#solution">Solution</a></li>
+    <li><a href="#twin">Digital Twin</a></li>
+    <li><a href="#access">Access</a></li>
+    <li><a href="#usecases">Use Cases</a></li>
+  </ul>
+  <a href="#cta" class="nav-cta">Request Demo</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-orb"></div>
+  <div style="position:relative; z-index:1;">
+    <div class="hero-tag">Patient Digital Twin Platform</div>
+    <h1 class="hero-title">
+      Your patient's health,<br><em>always current.</em>
+    </h1>
+    <p class="hero-sub">
+      MedicoSoft creates a real-time AI-powered virtual model of every patient — 
+      unifying fragmented records, wearable biosensor streams, and predictive intelligence 
+      into one living, breathing health profile.
+    </p>
+    <div class="hero-actions">
+      <a href="#solution" class="btn-primary">Explore Platform →</a>
+      <a href="#twin" class="btn-ghost">See the Twin</a>
+    </div>
+  </div>
+</section>
+
+<!-- ECG TICKER -->
+<div class="ecg-container" style="position:relative; z-index:1; background:var(--surface); border-top:1px solid var(--border);">
+  <svg class="ecg-line" viewBox="0 0 800 50" preserveAspectRatio="none">
+    <polyline
+      points="0,25 30,25 40,25 50,5 60,45 70,10 80,40 90,25 120,25 150,25 165,25 175,8 185,42 195,12 205,38 215,25 245,25 275,25 290,25 300,8 310,42 320,12 330,38 340,25 370,25 400,25 415,25 425,8 435,42 445,12 455,38 465,25 495,25 525,25 540,25 550,8 560,42 570,12 580,38 590,25 620,25 650,25 665,25 675,8 685,42 695,12 705,38 715,25 745,25 775,25 800,25"
+      fill="none"
+      stroke="rgba(0,255,140,0.4)"
+      stroke-width="1.5"
+    />
+  </svg>
+</div>
+
+<!-- TICKER -->
+<div class="ticker-wrap" style="position:relative; z-index:1;">
+  <div class="ticker">
+    <span>●</span> Real-time ECG Monitoring
+    <span>●</span> SpO₂ Continuous Tracking
+    <span>●</span> PPG Analysis
+    <span>●</span> FHIR/HL7 Compliant
+    <span>●</span> AI-Powered Predictions
+    <span>●</span> Consent-Based Sharing
+    <span>●</span> Universal Health ID
+    <span>●</span> Cross-Hospital Access
+    <span>●</span> IMU Sensor Fusion
+    <span>●</span> Audit Trail
+    <span>●</span> Real-time ECG Monitoring
+    <span>●</span> SpO₂ Continuous Tracking
+    <span>●</span> PPG Analysis
+    <span>●</span> FHIR/HL7 Compliant
+    <span>●</span> AI-Powered Predictions
+    <span>●</span> Consent-Based Sharing
+    <span>●</span> Universal Health ID
+    <span>●</span> Cross-Hospital Access
+    <span>●</span> IMU Sensor Fusion
+    <span>●</span> Audit Trail
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item fade-in">
+    <span class="stat-num">∞</span>
+    <span class="stat-label">Longitudinal History</span>
+  </div>
+  <div class="stat-item fade-in">
+    <span class="stat-num">< 1s</span>
+    <span class="stat-label">Record Access Time</span>
+  </div>
+  <div class="stat-item fade-in">
+    <span class="stat-num">6+</span>
+    <span class="stat-label">Biosensor Streams</span>
+  </div>
+  <div class="stat-item fade-in">
+    <span class="stat-num">0</span>
+    <span class="stat-label">Paper Records Needed</span>
+  </div>
+</div>
+
+<!-- PROBLEM SECTION -->
+<section class="problem-section" id="problem">
+  <div class="section-tag">// 01 — Problem</div>
+  <div class="section-title">Healthcare data is broken by design.</div>
+  <p class="section-desc">Fragmented records across hospitals, static histories, and siloed systems leave clinicians making critical decisions with incomplete information.</p>
+
+  <div class="problem-grid">
+    <div class="problem-issues fade-in">
+      <div class="issue-card">
+        <div class="issue-icon">⚡</div>
+        <div class="issue-text">
+          <strong>Fragmented Records</strong>
+          Prescriptions, reports, and medical history are scattered across different hospitals with no universal access.
+        </div>
+      </div>
+      <div class="issue-card">
+        <div class="issue-icon">⏱</div>
+        <div class="issue-text">
+          <strong>Delayed Decisions</strong>
+          Doctors make decisions with incomplete or delayed information, increasing the risk of misdiagnosis.
+        </div>
+      </div>
+      <div class="issue-card">
+        <div class="issue-icon">📄</div>
+        <div class="issue-text">
+          <strong>Static Medical Records</strong>
+          Records do not reflect real-time physiological changes — a snapshot from months ago is treated as current truth.
+        </div>
+      </div>
+      <div class="issue-card">
+        <div class="issue-icon">🔗</div>
+        <div class="issue-text">
+          <strong>Zero Interoperability</strong>
+          No universal standard to access records across institutions leads to duplication, delays, and inefficiency.
+        </div>
+      </div>
+      <div class="issue-card">
+        <div class="issue-icon">🚨</div>
+        <div class="issue-text">
+          <strong>Missed Early Warnings</strong>
+          Early signs of chronic disease or deterioration are invisible without continuous, longitudinal monitoring.
+        </div>
+      </div>
+    </div>
+
+    <div class="problem-visual fade-in">
+      <div class="fragmented-nodes">
+        <div class="node" style="top:15%; left:10%; --dur:5s; --delay:0s; --tx:8px; --ty:-6px;">Hospital A<br><span style="color:var(--accent3); font-size:0.6rem;">Lab Reports</span></div>
+        <div class="node" style="top:10%; left:55%; --dur:4s; --delay:0.5s; --tx:-5px; --ty:8px;">Hospital B<br><span style="color:var(--accent3); font-size:0.6rem;">Prescriptions</span></div>
+        <div class="node" style="top:40%; left:70%; --dur:6s; --delay:1s; --tx:6px; --ty:-10px;">Clinic C<br><span style="color:var(--accent3); font-size:0.6rem;">Imaging</span></div>
+        <div class="node" style="top:65%; left:55%; --dur:4.5s; --delay:0.2s; --tx:-8px; --ty:6px;">Wearable<br><span style="color:var(--accent3); font-size:0.6rem;">ECG / SpO₂</span></div>
+        <div class="node" style="top:70%; left:12%; --dur:5.5s; --delay:0.8s; --tx:5px; --ty:-5px;">Lab D<br><span style="color:var(--accent3); font-size:0.6rem;">Blood Work</span></div>
+        <div class="node" style="top:38%; left:5%; --dur:3.5s; --delay:0.3s; --tx:7px; --ty:9px;">Pharmacy<br><span style="color:var(--accent3); font-size:0.6rem;">Drug History</span></div>
+
+        <!-- center patient -->
+        <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:80px; height:80px; border-radius:50%; border:1px dashed rgba(255,107,107,0.25); display:flex; align-items:center; justify-content:center;">
+          <div style="font-family:'DM Mono',monospace; font-size:0.6rem; color:var(--accent3); text-align:center; line-height:1.3;">PATIENT<br>?</div>
+        </div>
+
+        <div class="no-connection">// NO UNIFIED CONNECTION</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION / FEATURES -->
+<section id="solution" style="position:relative; z-index:1; padding:6rem 4rem;">
+  <div class="section-tag">// 02 — Solution</div>
+  <div class="section-title">One ID. One record. Every care event.</div>
+  <p class="section-desc">MedicoSoft assigns each patient a universal digital health ID and continuously synchronizes all care data into a unified, AI-augmented platform.</p>
+
+  <div class="features-grid fade-in">
+    <div class="feature-card">
+      <div class="feature-num">01</div>
+      <span class="feature-icon">🆔</span>
+      <h3 class="feature-title">Universal Health ID</h3>
+      <p class="feature-desc">Each patient receives a unique, portable digital ID that anchors their entire health history — independent of which institution they visit.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">02</div>
+      <span class="feature-icon">📡</span>
+      <h3 class="feature-title">Real-Time Biosensor Streams</h3>
+      <p class="feature-desc">Continuous ingest of ECG, PPG, SpO₂, IMU, and other wearable signals — updating the digital twin every second.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">03</div>
+      <span class="feature-icon">🏥</span>
+      <h3 class="feature-title">Cross-Hospital Interoperability</h3>
+      <p class="feature-desc">Authorized clinicians across any institution can access the complete patient record instantly, using FHIR/HL7 standards.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">04</div>
+      <span class="feature-icon">🤖</span>
+      <h3 class="feature-title">AI Prediction Engine</h3>
+      <p class="feature-desc">Time-series ML models simulate future health trajectories, flag deterioration risks, and surface early warnings before symptoms appear.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">05</div>
+      <span class="feature-icon">👨‍⚕️</span>
+      <h3 class="feature-title">Doctor Decision Support</h3>
+      <p class="feature-desc">Clinician dashboard with full longitudinal history, predictive insights, and drug interaction alerts tailored to the current patient context.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-num">06</div>
+      <span class="feature-icon">🔒</span>
+      <h3 class="feature-title">Consent & Audit Trail</h3>
+      <p class="feature-desc">Every access event is logged and tied to patient consent. Full transparency over who viewed what data, and when.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIGITAL TWIN SECTION -->
+<section class="twin-section" id="twin">
+  <div class="twin-layout">
+    <div>
+      <div class="section-tag fade-in">// 03 — Digital Twin</div>
+      <h2 class="section-title fade-in">A living model of the patient — always in sync.</h2>
+      <p class="section-desc fade-in">The digital twin is not a static profile. It is a continuously updated computational model that ingests real-time physiological signals, historical records, and environmental data to simulate the patient's current and future health state.</p>
+
+      <div class="twin-streams fade-in">
+        <div class="stream-item">
+          <span class="stream-label">ECG Signal</span>
+          <div class="stream-bar"><div class="stream-fill" style="animation-delay:0s;"></div></div>
+          <span class="stream-val">72 bpm</span>
+        </div>
+        <div class="stream-item">
+          <span class="stream-label">SpO₂</span>
+          <div class="stream-bar"><div class="stream-fill" style="animation-delay:0.4s;"></div></div>
+          <span class="stream-val">98.2%</span>
+        </div>
+        <div class="stream-item">
+          <span class="stream-label">Blood Pressure</span>
+          <div class="stream-bar"><div class="stream-fill" style="animation-delay:0.8s;"></div></div>
+          <span class="stream-val">118/76</span>
+        </div>
+        <div class="stream-item">
+          <span class="stream-label">IMU Motion</span>
+          <div class="stream-bar"><div class="stream-fill" style="animation-delay:1.2s;"></div></div>
+          <span class="stream-val">Active</span>
+        </div>
+        <div class="stream-item">
+          <span class="stream-label">Risk Score</span>
+          <div class="stream-bar"><div class="stream-fill" style="background: linear-gradient(90deg, #00ff8c, #ffcc00); animation-delay:0.2s;"></div></div>
+          <span class="stream-val" style="color:#ffcc00;">Low</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="twin-viz fade-in">
+      <div class="orbit orbit-1">
+        <div class="orbit-node" style="--spd:12s;">❤️</div>
+        <div class="orbit-node orbit-node-2" style="--spd:12s;">🫁</div>
+      </div>
+      <div class="orbit orbit-2">
+        <div class="orbit-node" style="--spd:20s; --dir2:normal;">💊</div>
+        <div class="orbit-node orbit-node-2" style="--spd:20s; --dir2:normal;">🧬</div>
+      </div>
+      <div class="orbit orbit-3">
+        <div class="orbit-node" style="--spd:30s;">📊</div>
+        <div class="orbit-node orbit-node-2" style="--spd:30s;">🏥</div>
+      </div>
+      <div class="twin-core">
+        <div class="twin-core-label">PATIENT<br>TWIN<br>ACTIVE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCESS MODEL -->
+<section id="access" style="position:relative; z-index:1; padding:6rem 4rem;">
+  <div class="section-tag fade-in">// 04 — Access Model</div>
+  <h2 class="section-title fade-in">Secure. Consent-driven. Role-based.</h2>
+  <p class="section-desc fade-in">Data access is not open — it is a precisely governed system that puts patients in control while enabling clinicians to work at full speed.</p>
+
+  <div class="access-grid fade-in">
+    <div class="access-card">
+      <span class="access-icon">🙋</span>
+      <div class="access-badge">Patient</div>
+      <h3 class="access-title">Consent Control</h3>
+      <p class="access-desc">Patients authorize access per doctor, per institution, and per data type. Revocable at any time.</p>
+    </div>
+    <div class="access-card">
+      <span class="access-icon">🩺</span>
+      <div class="access-badge">Clinician</div>
+      <h3 class="access-title">Role-Based Access</h3>
+      <p class="access-desc">Physicians, nurses, and specialists see only what they need — scoped by role, department, and consent level.</p>
+    </div>
+    <div class="access-card">
+      <span class="access-icon">🔑</span>
+      <div class="access-badge">Security</div>
+      <h3 class="access-title">FHIR/HL7 Standards</h3>
+      <p class="access-desc">All data exchange follows international healthcare standards with end-to-end encryption and zero-knowledge architecture.</p>
+    </div>
+    <div class="access-card">
+      <span class="access-icon">📋</span>
+      <div class="access-badge">Compliance</div>
+      <h3 class="access-title">Full Audit Trail</h3>
+      <p class="access-desc">Every access event is immutably logged: who accessed which record, when, and from where. Complete accountability.</p>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section class="usecases-section" id="usecases">
+  <div class="section-tag fade-in">// 05 — Use Cases</div>
+  <h2 class="section-title fade-in">Transforming every point of care.</h2>
+  <p class="section-desc fade-in">MedicoSoft adapts to every clinical scenario — from emergency rooms to long-term chronic disease management.</p>
+
+  <div class="usecase-list fade-in">
+    <div class="usecase-card">
+      <div class="usecase-num">01</div>
+      <div class="usecase-content">
+        <h4>New Hospital Visit</h4>
+        <p>A patient visits an unfamiliar hospital. The doctor enters the patient's Health ID and instantly accesses the complete longitudinal record — no forms, no phone calls, no delays.</p>
+      </div>
+    </div>
+    <div class="usecase-card">
+      <div class="usecase-num">02</div>
+      <div class="usecase-content">
+        <h4>Emergency Response</h4>
+        <p>In a critical emergency, clinicians immediately access allergies, current medications, recent vitals, and active conditions — enabling life-saving decisions in seconds.</p>
+      </div>
+    </div>
+    <div class="usecase-card">
+      <div class="usecase-num">03</div>
+      <div class="usecase-content">
+        <h4>Chronic Disease Management</h4>
+        <p>For long-term patients, the AI twin tracks continuous biometric trends, predicts deterioration windows, and alerts care teams before a crisis develops.</p>
+      </div>
+    </div>
+    <div class="usecase-card">
+      <div class="usecase-num">04</div>
+      <div class="usecase-content">
+        <h4>Remote Consultations</h4>
+        <p>Specialists anywhere in the world can conduct fully informed remote consultations with complete patient data visibility, real-time vitals, and predictive risk context.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="tech" style="position:relative; z-index:1; padding:6rem 4rem;">
+  <div class="section-tag fade-in">// 06 — Architecture</div>
+  <h2 class="section-title fade-in">Built for scale. Designed for trust.</h2>
+
+  <div class="tech-layers fade-in">
+    <div class="tech-layer">
+      <div class="tech-layer-name">Sensors</div>
+      <div class="tech-layer-items">
+        <span class="tech-tag">ECG</span>
+        <span class="tech-tag">PPG</span>
+        <span class="tech-tag">SpO₂</span>
+        <span class="tech-tag">IMU</span>
+        <span class="tech-tag">Blood Pressure</span>
+        <span class="tech-tag">Temperature</span>
+        <span class="tech-tag">Glucose (CGM)</span>
+      </div>
+    </div>
+    <div class="tech-layer">
+      <div class="tech-layer-name">Ingestion</div>
+      <div class="tech-layer-items">
+        <span class="tech-tag">MQTT Broker</span>
+        <span class="tech-tag">Kafka Streams</span>
+        <span class="tech-tag">WebSocket API</span>
+        <span class="tech-tag">Edge Processing</span>
+      </div>
+    </div>
+    <div class="tech-layer">
+      <div class="tech-layer-name">AI / ML</div>
+      <div class="tech-layer-items">
+        <span class="tech-tag">LSTM Time-Series</span>
+        <span class="tech-tag">Transformer Models</span>
+        <span class="tech-tag">Anomaly Detection</span>
+        <span class="tech-tag">Risk Stratification</span>
+        <span class="tech-tag">Federated Learning</span>
+      </div>
+    </div>
+    <div class="tech-layer">
+      <div class="tech-layer-name">Storage</div>
+      <div class="tech-layer-items">
+        <span class="tech-tag">TimescaleDB</span>
+        <span class="tech-tag">FHIR R4 Server</span>
+        <span class="tech-tag">HL7 Integration</span>
+        <span class="tech-tag">DICOM Imaging</span>
+        <span class="tech-tag">Encrypted EHR</span>
+      </div>
+    </div>
+    <div class="tech-layer">
+      <div class="tech-layer-name">Security</div>
+      <div class="tech-layer-items">
+        <span class="tech-tag">OAuth 2.0 / SMART</span>
+        <span class="tech-tag">Zero-Trust Network</span>
+        <span class="tech-tag">AES-256 Encryption</span>
+        <span class="tech-tag">Immutable Audit Log</span>
+        <span class="tech-tag">HIPAA Compliant</span>
+      </div>
+    </div>
+    <div class="tech-layer">
+      <div class="tech-layer-name">Interfaces</div>
+      <div class="tech-layer-items">
+        <span class="tech-tag">Patient Dashboard</span>
+        <span class="tech-tag">Doctor Portal</span>
+        <span class="tech-tag">Mobile App</span>
+        <span class="tech-tag">Hospital EHR API</span>
+        <span class="tech-tag">Analytics Platform</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="cta">
+  <div class="section-tag" style="display:inline-block;">// 07 — Get Started</div>
+  <h2 class="section-title">The future of care is continuous.</h2>
+  <p class="section-desc">Join the institutions already building the next generation of patient-centered healthcare with MedicoSoft's Digital Twin Platform.</p>
+  <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+    <a href="#" class="btn-primary">Request Early Access →</a>
+    <a href="#" class="btn-ghost">Download Whitepaper</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div style="display:flex; align-items:center; gap:0.6rem;">
+    <div class="logo-dot" style="width:6px; height:6px;"></div>
+    MedicoSoft Digital Twin Platform — Confidential Overview
+  </div>
+  <div>Built for the future of healthcare</div>
+  <div>FHIR · HL7 · HIPAA · ISO 27001</div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
